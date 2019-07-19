@@ -24,4 +24,4 @@ nbproject
 
 node_modules
 *.log
-lib
+# lib
