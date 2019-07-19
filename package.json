@@ -16,8 +16,7 @@
     "test:watch": "yarn test -- --watch",
     "prepublishOnly": "yarn clean && yarn build",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once",
-    "postinstall": "yarn build"
+    "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
