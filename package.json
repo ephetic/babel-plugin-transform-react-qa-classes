@@ -2,12 +2,12 @@
   "name": "babel-plugin-transform-react-qa-classes",
   "version": "0.0.0-semantic-release",
   "license": "MIT",
-  "description": "Add component's name in `data-qa` attributes to React Components Edit",
+  "description": "Add component's name in `data-qa` attributes to React Components (forked from davesnx)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davesnx/babel-plugin-transform-react-qa-classes.git"
+    "url": "git+https://github.com/ephetic/babel-plugin-transform-react-qa-classes.git"
   },
-  "author": "davesnx <dsnxmoreno@gmail.com>",
+  "author": "ephetic <bpcleary@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
@@ -16,7 +16,8 @@
     "test:watch": "yarn test -- --watch",
     "prepublishOnly": "yarn clean && yarn build",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
